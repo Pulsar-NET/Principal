@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes de Suscripción</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Elige tu Plan de Suscripción</h1>
+    <p>Tu seguridad es nuestra prioridad</p>
+  </header>
+
+  <main>
+    <section class="planes">
+      <!-- contenido de planes igual que antes -->
+      <!-- ... -->
+    </section>
+
+    <section class="seleccion-plan">
+      <h3>Selecciona tu plan</h3>
+      <label><input type="radio" name="plan" value="bronce"> Bronce - $99 MX</label><br>
+      <label><input type="radio" name="plan" value="gold"> Gold - $250 MX</label><br>
+      <label><input type="radio" name="plan" value="platinum"> Platinum - $450 MX</label>
+    </section>
+
+    <section class="pago">
+      <h3>Selecciona tu forma de pago</h3>
+      <label><input type="radio" name="pago" value="transferencia"> Transferencia Bancaria</label><br>
+      <label><input type="radio" name="pago" value="mercado"> Mercado Pago</label>
+
+      <p class="seguridad">🔒 Todos los pagos están protegidos con encriptación SSL y verificación segura. Tu información se mantiene confidencial y segura.</p>
+
+      <button type="button" class="btn-confirmar" onclick="procesarPago()">Confirmar y Proceder al Pago</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TuNombre. Pagos 100% seguros. Gracias por tu confianza.</p>
+  </footer>
+
+  <script>
+    function procesarPago() {
+      const metodo = document.querySelector('input[name="pago"]:checked');
+      if (!metodo) {
+        alert('Por favor selecciona una forma de pago.');
+        return;
+      }
+
+      if (metodo.value === 'transferencia') {
+        window.location.href = 'transferencia.html'; // Cambia a tu URL real
+      } else if (metodo.value === 'mercado') {
+        window.location.href = 'mercadopago.html'; // Cambia a tu URL real
+      }
+    }
+  </script>
+</body>
+</html>

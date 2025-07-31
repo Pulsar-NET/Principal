@@ -1,0 +1,116 @@
+/* Fuente y base visual */
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background-color: #f6f9fc;
+  color: #2d2d2d;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(135deg, #003c71, #007ab8);
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.4em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Contenedor principal */
+main {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos */
+section h2, section h3 {
+  color: #003c71;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+/* Listas e info */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1em;
+}
+
+/* Párrafos */
+p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Mensaje de seguridad */
+.seguridad {
+  background-color: #e9f7f2;
+  color: #138665;
+  border-left: 5px solid #13aa81;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 0.95em;
+}
+
+/* Botón elegante */
+.btn-confirmar {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1em;
+  font-weight: 600;
+  background: linear-gradient(135deg, #007ab8, #003c71);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-confirmar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* QR elegante */
+img {
+  max-width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #003c71;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9em;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.05);
+}
