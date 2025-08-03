@@ -32,7 +32,14 @@
 
       <p class="seguridad">🔒 Todos los pagos están protegidos con encriptación SSL y verificación segura. Tu información se mantiene confidencial y segura.</p>
 
-      <button type="button" class="btn-confirmar" onclick="procesarPago()">Confirmar y Proceder al Pago</button>
+     <button type="button" class="btn-confirmar" onclick="window.location.href="">
+  Pagar Por Transferencia Bancaria
+</button>
+
+<button type="button" class="btn-confirmar" onclick="window.location.href="">
+  Pagar con Mercado Pago
+</button>
+
     </section>
   </main>
 
@@ -40,20 +47,7 @@
     <p>© 2025 TuNombre. Pagos 100% seguros. Gracias por tu confianza.</p>
   </footer>
 
-  <script>
-    function procesarPago() {
-      const metodo = document.querySelector('input[name="pago"]:checked');
-      if (!metodo) {
-        alert('Por favor selecciona una forma de pago.');
-        return;
-      }
-
-      if (metodo.value === 'transferencia') {
-        window.location.href = 'transferencia.html'; // Cambia a tu URL real
-      } else if (metodo.value === 'mercado') {
-        window.location.href = 'mercadopago.html'; // Cambia a tu URL real
-      }
-    }
-  </script>
+  
 </body>
 </html>
+
